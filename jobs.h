@@ -5,16 +5,16 @@
 
 // Job status
 typedef enum {
-    JOB_RUNNING = 0,
-    JOB_STOPPED = 1,
-    JOB_TERMINATED = 2
+  JOB_RUNNING = 0,
+  JOB_STOPPED = 1,
+  JOB_TERMINATED = 2
 } job_status_t;
 
 // Job struct
 typedef struct {
-    pid_t pid;
-    char *cmd;
-    job_status_t status;
+  pid_t pid;
+  char *cmd;
+  job_status_t status;
 } job_t;
 
 extern job_t jobs[MAX_JOBS];
